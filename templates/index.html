@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Imgage List</title>
+    </head>
+
+    <body>
+        <table border="1">
+            <tr>
+                <th>name</th>
+                <th>c_time</th>
+                <th>m_time</th>
+                <th>f_path</th>
+                <th>ori_url</th>
+                <th>zoom_url</th>
+                <th>rotate_url</th>
+                <th>zoom btn</th>
+                <th>rorate btn</th>
+            </tr>
+            {{range .}}
+                <tr>
+                    <td>{{.Name}}</td>
+                    <td>{{.C_time}}</td>
+                    <td>{{.M_time}}</td>
+                    <td>{{.F_path}}</td>
+                    <td>{{.Ori_url}}</td>
+                    <td>{{.Zoom_url}}</td>
+                    <td>{{.Rotate_url}}</td>
+                    <td>
+                        <from action="/fop" metdod="post">
+                            <input name="Name" type="hidden" value="{{.Name}}">
+                            <input name="Ori_url" type="hidden" value="{{.Ori_url}}">
+                            <input name="Fop" type="hidden" value="Zoom">
+                            <input type="submit" value="zoom"/> 
+                        </form>
+                    </td>
+                    
+                    <td>
+                        <from action="/fop" metdod="post">
+                            <input name="Name" type="hidden" value="{{.Name}}">
+                            <input name="Ori_url" type="hidden" value="{{.Ori_url}}">
+                            <input name="Fop" type="hidden" value="Rotate">
+                            <input type="submit" value="rotate"/> 
+                        </form>
+                    </td>
+                </tr>
+            {{end}}
+        </table>
+    </body>
+</html>
