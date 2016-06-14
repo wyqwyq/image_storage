@@ -14,7 +14,7 @@ import (
 )
 
 // gloal variables
-var Cloud_base_url = "http://o8cpu8afd.bkt.clouddn.com" // why '/'' ?
+var Cloud_base_url = "http:////o8cpu8afd.bkt.clouddn.com" // why '/'' ?
 var Base_dir =  "/Users/yuri/Project/Go/src/github.com/wyqwyq/image_storage"
 var Template_dir = path.Join(Base_dir, "templates")
 var Template_name = "index.html"

@@ -26,8 +26,8 @@ type PutRet struct {
 
 func init() {
     //初始化AK，SK
-    conf.ACCESS_KEY = "iVel2tyTiv0Zv4LEqDsOe3y-9LtDHvqeduRCJP79"
-    conf.SECRET_KEY = "g0oZ6OLV9Y420Ris80VdmeJBIHCWm33yZRTWbj7u"
+    conf.ACCESS_KEY = "XXXXXX"
+    conf.SECRET_KEY = "XXXXXX"
 }
 
 func UploadFile(filepath string, key string) {
