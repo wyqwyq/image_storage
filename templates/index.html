@@ -26,7 +26,7 @@
                     <td>{{.Zoom_url}}</td>
                     <td>{{.Rotate_url}}</td>
                     <td>
-                        <from action="/fop" metdod="post">
+                        <form action="/fop" method="post">
                             <input name="Name" type="hidden" value="{{.Name}}">
                             <input name="Ori_url" type="hidden" value="{{.Ori_url}}">
                             <input name="Fop" type="hidden" value="Zoom">
@@ -35,7 +35,7 @@
                     </td>
                     
                     <td>
-                        <from action="/fop" metdod="post">
+                        <form action="/fop" method="post">
                             <input name="Name" type="hidden" value="{{.Name}}">
                             <input name="Ori_url" type="hidden" value="{{.Ori_url}}">
                             <input name="Fop" type="hidden" value="Rotate">
